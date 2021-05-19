@@ -14,7 +14,6 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'nanotech/jellybeans.vim'
 "Plugin 'klen/python-mode'
 
 " All of your Plugins must be added before the following line
@@ -38,5 +37,3 @@ set textwidth=80
 " Backspace over everything in insert mode
 set backspace=indent,eol,start
 "let &colorcolumn=&l:textwidth . ",".join(range(120,999),",")
-
-colorscheme jellybeans

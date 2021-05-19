@@ -1,6 +1,6 @@
 export PS1='\[\e[38;5;219m\]\w\[\e[38;5;189m\]:\[\e[0m\] '
 
-if [ -f . /usr/local/etc/bash_completion ]; then
+if [ -f /usr/local/etc/bash_completion ]; then
 	echo "bash completion"
     . /usr/local/etc/bash_completion
 fi
