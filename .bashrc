@@ -9,3 +9,6 @@ if [ -f ~/.git-completion.bash ]; then
 	echo "git completion"
   . ~/.git-completion.bash
 fi
+
+PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
