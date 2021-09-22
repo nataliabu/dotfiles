@@ -14,6 +14,8 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'fatih/vim-go'
+Plugin 'gioele/vim-autoswap'
 "Plugin 'klen/python-mode'
 
 " All of your Plugins must be added before the following line
@@ -37,3 +39,14 @@ set textwidth=80
 " Backspace over everything in insert mode
 set backspace=indent,eol,start
 "let &colorcolumn=&l:textwidth . ",".join(range(120,999),",")
+
+"search as the letters are typed
+set incsearch
+"highlight search result
+set hlsearch
+
+" Always display the statusbar
+set laststatus=2
+
+"To be able to leave an unsaved buffer to access another one
+set hidden
