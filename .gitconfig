@@ -2,4 +2,14 @@
 	name = Natalia Bustamante Rodriguez
 	email = natisaxo@gmail.com
 [core]
-	excludesfile = /Users/nataliabustamanter/.gitignore
+	excludesfile = ~/.gitignore
+	editor = vim
+[push]
+	default = current
+[merge]
+	tool = vimdiff
+	conflictstyle = merge
+[alias]
+	co = checkout
+	graph = log --oneline --graph
+	cached = diff --cached

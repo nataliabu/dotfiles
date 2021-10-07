@@ -16,6 +16,7 @@ call vundle#begin()
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'fatih/vim-go'
 Plugin 'gioele/vim-autoswap'
+Plugin 'nataliabu/vim-bombon'
 "Plugin 'klen/python-mode'
 
 " All of your Plugins must be added before the following line
@@ -26,6 +27,7 @@ filetype plugin indent on
 " Enable syntax color
 syntax on
 
+colorscheme bombon
 " Display line numbers
 set number
 set mouse=n
@@ -50,3 +52,12 @@ set laststatus=2
 
 "To be able to leave an unsaved buffer to access another one
 set hidden
+
+function! SynStack()
+	if !exists("*synstack")
+		return
+	endif
+	return map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+command! -nargs=0 Synstack :call SynStack()

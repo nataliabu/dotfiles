@@ -1,13 +1,3 @@
-if [ -f /usr/local/etc/bash_completion ]; then
-	echo "bash completion"
-    . /usr/local/etc/bash_completion
-fi
-# To enable autocompletion with Git
-if [ -f ~/.git-completion.bash ]; then
-	echo "git completion"
-  . ~/.git-completion.bash
-fi
-
 # To enable __git_ps1
 if [ -f /usr/share/bash-completion/bash_completion ]; then
 	. /usr/share/bash-completion/bash_completion
