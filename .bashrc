@@ -3,9 +3,6 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 	. /usr/share/bash-completion/bash_completion
 fi
 
-PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 export PS1='\[\e[38;5;219m\]\w\[\e[38;5;189m\]$(__git_ps1):\[\e[0m\] '
 # Configure __git_ps1 in $PS1 to display info if there are local modifications
 # (with *) or staged modifications (with +)
