@@ -1,4 +1,4 @@
-# To enable __git_ps1
+# To enable __git_ps1 AND autocompletion on git commands on Linux
 if [ -f /usr/share/bash-completion/bash_completion ]; then
 	. /usr/share/bash-completion/bash_completion
 fi
@@ -13,3 +13,7 @@ export GIT_PS1_SHOWUPSTREAM=auto
 # Configure __git_ps1 in $PS1 to display info regarding the state of the stash
 # stack (with $ if there are any stashes)
 export GIT_PS1_SHOWSTASHSTATE=1
+
+if [ -f ~/.bashrc_local ]; then
+	. ~/.bashrc_local
+fi
