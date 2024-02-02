@@ -13,3 +13,12 @@
 	co = checkout
 	graph = log --oneline --graph
 	cached = diff --cached
+	st = status
+[url "https://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@github.com/"]
+	insteadOf = https://github.com/
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential

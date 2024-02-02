@@ -14,6 +14,18 @@ export GIT_PS1_SHOWUPSTREAM=auto
 # stack (with $ if there are any stashes)
 export GIT_PS1_SHOWSTASHSTATE=1
 
+# Add /usr/local/go/bin to the PATH environment variable
+export PATH=/home/natalia/go/bin:/usr/local/go/bin:/home/natalia/bin:/home/natalia/.local/bin:$PATH
+
+# Initialise pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 if [ -f ~/.bashrc_local ]; then
 	. ~/.bashrc_local
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
